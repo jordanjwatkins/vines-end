@@ -1,0 +1,36 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    position: relative;
+}
+
+body,
+html {
+    overflow: hidden;
+    font: 15px sans-serif;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #121719;
+}
+
+.app-root {
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform-origin: 50% 50%;
+}
+
+.overlay,
+#svg {
+    transition: opacity 1.3s;
+    opacity: 1;
+}
+
+.overlay.is-hidden,
+#svg.is-hidden {
+    opacity: 0;
+}
